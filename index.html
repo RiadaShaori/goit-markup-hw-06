@@ -394,7 +394,11 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close" data-modal-close></button>
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="icon" width="11" height="11">
+                    <use href="./images/icons.svg#icon-x"></use>
+                </svg>
+            </button>
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
             <form name="register-form" class="modal-form">
                 <div class="input-field">
@@ -448,7 +452,7 @@
                     </div>
                 </div>
 
-                <div class="input-field">
+                <div class="input-field input-comment">
                     <label for="user-comment" class="input-title">Коментар</label>
                     <textarea 
                         name="user-comment" 
@@ -457,7 +461,7 @@
                         placeholder="Введіть текст"></textarea>
                  </div>
 
-                 <div class="input-field">
+                 <div class="input-checkbox">
                     <input 
                         type="checkbox" 
                         name="user-policy" 
